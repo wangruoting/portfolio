@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './Navbar';
+import Navbar from './Navbar/Navbar';
 import Project from './Project/Project.js';
 import About from './About/About.js';
 import Resume from './Resume/Resume.js';
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Project />} />
-          <Route path="/about" element={<About />} />
+          {/* <Route path="/about" element={<About />} /> */}
           <Route path="/resume" element={<Resume />} />
         </Routes>
       </div>

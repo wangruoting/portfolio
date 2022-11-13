@@ -17,9 +17,10 @@ body {
     font-family: 'Noto Sans', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    /* align-items: stretch; */
     gap: 2rem;
     padding: 1rem 1rem;
+    align-items: center;
 }
 
 .nav ul {
@@ -50,5 +51,17 @@ body {
 .nav li:hover {
     color: #CEF5EB;
     /* color: #96A885; */
+    transition: 0.5s;
+}
+
+.linkedin-logo {
+    position: absolute;
+    right: 5%;
+    font-size: x-large;
+    color: #0079BF;
+}
+
+.linkedin-logo:hover {
+    color: #0091E6;
     transition: 0.5s;
 }

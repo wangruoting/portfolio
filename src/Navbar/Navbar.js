@@ -1,15 +1,17 @@
-import "./style.css";
+import "./navbar.css";
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 
 export default function Navbar() {
-    return <nav className="nav">
+    return (<nav className="nav">
         <Link to="/" className="site-title">Site Name</Link>
         <ul>
             <CustomLink to="/project">Projects</CustomLink>
             <CustomLink to="/resume">Resume</CustomLink>
-            <CustomLink to="/about">About</CustomLink>
         </ul>
-    </nav>
+        {/* add following code in a tag, after target element to prevent phishing tabnabbing  */}
+        {/* rel="noopener noreferrer" */}
+        <div className="linkedin-logo"><a href="https://www.linkedin.com/in/ruoting-wang-22ba851b1/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></div>
+    </nav>);
 }
 
 function CustomLink({ to, children, ...props }) {
