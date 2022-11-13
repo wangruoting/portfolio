@@ -8,8 +8,6 @@ export default function Navbar() {
             <CustomLink to="/project">Projects</CustomLink>
             <CustomLink to="/resume">Resume</CustomLink>
         </ul>
-        {/* add following code in a tag, after target element to prevent phishing tabnabbing  */}
-        {/* rel="noopener noreferrer" */}
         <div className="linkedin-logo"><a href="https://www.linkedin.com/in/ruoting-wang-22ba851b1/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></div>
     </nav>);
 }

@@ -1,0 +1,7 @@
+.home-intro-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin: 5%;
+    grid-gap: 10%;
+}

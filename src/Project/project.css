@@ -70,3 +70,8 @@
         transform: translateY(0);
     }
 }
+
+.redirect-to-each-project {
+    text-decoration: none;
+    color: rgb(94, 90, 90);
+}
