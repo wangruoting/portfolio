@@ -1,4 +1,5 @@
 import './ie.css';
+import React from 'react';
 
 export default function IE() {
     return (

@@ -1,14 +1,15 @@
 import "./navbar.css";
+import React from 'react';
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 
 export default function Navbar() {
     return (<nav className="nav">
-        <Link to="/" className="site-title">My Little Things</Link>
+        <Link to="/" className="site-title">Name/ Icon</Link>
         <ul>
-            <CustomLink to="/project">Projects</CustomLink>
-            <CustomLink to="/resume">Resume</CustomLink>
+            {/* <CustomLink to="/project">Projects</CustomLink> */}
+            <CustomLink to="/about">About</CustomLink>
         </ul>
-        <div className="linkedin-logo"><a href="https://www.linkedin.com/in/ruoting-wang-22ba851b1/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></div>
+        {/* <div className="linkedin-logo"><a href="https://www.linkedin.com/in/ruoting-wang-22ba851b1/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></div> */}
     </nav>);
 }
 

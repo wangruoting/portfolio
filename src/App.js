@@ -11,6 +11,7 @@ import FIT5147 from './FIT5147/FIT5147.js';
 import FIT5032 from './FIT5032/FIT5032.js';
 import IE from './ie/IE.js';
 import { Route, Routes } from 'react-router-dom';
+import React from 'react';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Project />} />
-          {/* <Route path="/about" element={<About />} /> */}
+          <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/ie" element={<IE />} />
           <Route path="/fit5225" element={<FIT5225 />} />
