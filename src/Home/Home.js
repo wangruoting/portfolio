@@ -26,7 +26,7 @@ export default function Home() {
 
             <div className='home-reuse-container services'>
                 <div className='home-heading-text-container'>
-                    <h2 className='home-heading-text'>Services I offer</h2>
+                    <h2 className='home-heading-text'>Services I offer <i class="fa-solid fa-wand-magic-sparkles" style={{ fontSize: '16px' }}></i></h2>
                 </div>
 
                 <div className='home-detail-service-text'>
@@ -40,7 +40,8 @@ export default function Home() {
 
             <div className='home-reuse-container certificates'>
                 <div className='home-heading-text-container'>
-                    <h2 className='home-heading-text'>Certified Skills</h2>
+                    <h2 className='home-heading-text'>Certified Skills <i class="fa-solid fa-ranking-star" style={{ fontSize: '16px' }}></i></h2>
+                    {/* <h3><i class="fa-solid fa-ranking-star"></i></h3> */}
                 </div>
 
                 <div className='certificates-pic-container'>
