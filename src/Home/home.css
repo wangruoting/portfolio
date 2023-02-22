@@ -127,3 +127,20 @@
 /* .certificates-pic-container {
     text-align: center;
 } */
+
+.home-detail-service-text-container {
+    background-color: #f2800653;
+    margin: 1.5%;
+    padding: 3%;
+    overflow: hidden;
+    border-radius: 5%;
+    /* box-shadow: 5px 5px 5px 5px red; */
+}
+
+.home-reuse-container.services {
+    /* background-color: #FFFFF0; */
+    background-color: #FEFBEA;
+    opacity: 80%;
+    overflow: hidden;
+    border-radius: 2%;
+}

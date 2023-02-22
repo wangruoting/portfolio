@@ -11,6 +11,8 @@ export default function Home() {
                     <h5 className='home-self-intro-text' style={{ opacity: "50%" }}>Front end developer based in Melbourne, Australia</h5>
                     <div className='resume-button-container'>
                         <button className='button resume-btn'>Resume</button>
+                        {/* <h5>Email</h5> */}
+                        {/* <button className='button resume-btn'>Linkedin</button> */}
                     </div>
                 </div>
                 <div className='profile-pic-container'>
@@ -30,11 +32,13 @@ export default function Home() {
                 </div>
 
                 <div className='home-detail-service-text'>
-                    <h4>Hosting Website with alternative architecture solutions</h4>
-                    <h4>Front end coding using multiple languages</h4>
-                    <h4>Database communication</h4>
-                    <h4>Public API into uses</h4>
-                    <h4>UI/ UX design with simplicity style</h4>
+                    <div className='home-detail-service-text-container'>
+                        <h5>Hosting Website with alternative architecture solutions</h5>
+                        <h5>Front end coding using multiple languages</h5>
+                        <h5>Database communication</h5>
+                        <h5>Public API into uses</h5>
+                        <h5>UI/ UX design with simplicity style</h5>
+                    </div>
                 </div>
             </div>
 
