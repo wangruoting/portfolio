@@ -129,7 +129,7 @@
 } */
 
 .home-detail-service-text-container {
-    background-color: #f2800653;
+    /* background-color: #f2800653; */
     margin: 1.5%;
     padding: 3%;
     overflow: hidden;
@@ -140,7 +140,63 @@
 .home-reuse-container.services {
     /* background-color: #FFFFF0; */
     background-color: #FEFBEA;
+    width: max-content;
+    opacity: 80%;
+    overflow: hidden;
+    /* border-radius: 2%; */
+}
+
+/* .home-reuse-container.certificates {
+    background-color: #EDE3FF;
     opacity: 80%;
     overflow: hidden;
     border-radius: 2%;
+}
+
+.certificates-pic-container {
+    background-color: #f2800653;
+    margin: 1.5%;
+    padding: 3%;
+    overflow: hidden;
+    border-radius: 5%;
+} */
+
+.projects-section-container {
+    /* background-color: #DBE2E9; */
+}
+
+.introduce-projects {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.home-reuse-container.projects1 {
+    margin-top: 5%;
+}
+
+.ie-intro-text-container {
+    margin: 5%;
+}
+
+.ie-pic {
+    overflow: hidden;
+    border-radius: 5%;
+    /* box-shadow: 5px 5px 5px 5px #fff; */
+}
+
+.ie-pic-container {
+    padding: 1.5%;
+    background-color: #ffffff97;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.redirect-to-each-project {
+    text-decoration: none;
+    color: #000;
+}
+
+.redirect-to-each-project:hover {
+    opacity: 0.7;
+    transition: 0.4s;
 }

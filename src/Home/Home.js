@@ -1,5 +1,6 @@
 import './home.css';
 import React from 'react';
+import { Link } from "react-router-dom";
 
 export default function Home() {
     return (
@@ -28,7 +29,7 @@ export default function Home() {
 
             <div className='home-reuse-container services'>
                 <div className='home-heading-text-container'>
-                    <h2 className='home-heading-text'>Services I offer <i class="fa-solid fa-wand-magic-sparkles" style={{ fontSize: '16px' }}></i></h2>
+                    <h2 className='home-heading-text'>Skills <i class="fa-solid fa-wand-magic-sparkles" style={{ fontSize: '16px' }}></i></h2>
                 </div>
 
                 <div className='home-detail-service-text'>
@@ -61,7 +62,29 @@ export default function Home() {
 
             </div>
 
+            <div className='projects-section-container'>
+                <div className='introduce-projects'>
+                    <h2>Projects</h2>
+                </div>
 
+                <div className='home-reuse-container projects1'>
+                    <div className='ie-pic-container'>
+                        <Link to="/ie" className='redirect-to-each-project pic'>
+                            <div className='ie-pic'>
+                                <img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png' width='100%' height='auto' alt='prevent-disease-project-landing-pic'></img>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className='ie-intro-text-container'>
+                        <Link to='/ie' className='redirect-to-each-project intro-text'>
+                            <h3>
+                                Hands on asd for new parents in Australia
+                            </h3>
+                        </Link>
+                        <h5 style={{ opacity: "50%" }}>Coder & Designer</h5>
+                    </div>
+                </div>
+            </div>
         </>
     );
 }
