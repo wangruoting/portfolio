@@ -1,28 +1,83 @@
 .home-reuse-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* grid-template-columns: 1fr 2fr; */
     justify-content: center;
     margin: 3%;
     /* grid-gap: 7%; */
 }
 
-.profile-pic-container {
-    /* background-color: black; */
+.short-self-intro {
+    height: 20rem;
+    /* width: 33rem; */
+    /* width: 30%; */
+    margin: 0 auto;
 }
 
-.home-landing-pic {
+.profile-pic-container {
+    position: relative;
+    height: 20rem;
+    /* width: 40rem; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.landing-cat {
+    width: auto;
+    /* height: 80px; */
+    height: 24%;
+    position: absolute;
+    bottom: 0%;
+}
+
+.landing-stand-read {
+    width: auto;
+    height: 80%;
+    /* height: 280px; */
+    position: absolute;
+    left: 12%;
+    bottom: 2%;
+}
+
+.landing-ice-cream-bike {
+    position: absolute;
+    width: auto;
+    height: 200px;
+    left: 34%;
+    bottom: 15%;
+}
+
+.landing-plant {
+    position: absolute;
+    width: auto;
+    height: 90px;
+    right: 23%;
+    bottom: 5%;
+}
+
+.landing-warning-light {
+    position: absolute;
+    width: auto;
+    height: 300px;
+    right: 5%;
+    bottom: 0%;
+}
+
+/* .home-landing-pic {
     overflow: hidden;
     border-radius: 100%;
     width: 65%;
     height: auto;
     margin: 0 auto;
-}
+} */
 
 .short-self-intro {
-    text-align: left;
+    text-align: center;
+    /* text-align: left; */
     /* background-color: red; */
     padding-top: 18%;
     padding-left: 30%;
+
 }
 
 .home-name-text {

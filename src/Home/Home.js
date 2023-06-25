@@ -9,7 +9,7 @@ export default function Home() {
                 <div className='short-self-intro'>
                     <h2 className='home-name-text'>Ruoting Wang</h2>
                     {/* <Text type="secondary">Front end developer based in Melbourne, Australia</Text> */}
-                    <h5 className='home-self-intro-text' style={{ opacity: "50%" }}>Front end developer based in Melbourne, Australia</h5>
+                    <h5 className='home-self-intro-text' style={{ opacity: "50%" }}>Full time software developer;  Casual reader</h5>
                     <div className='resume-button-container'>
                         <button className='button resume-btn'>Resume</button>
                         {/* <h5>Email</h5> */}
@@ -18,7 +18,12 @@ export default function Home() {
                 </div>
                 <div className='profile-pic-container'>
                     <div className='home-landing-pic'>
-                        <img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/undraw_Modern_professional.png' style={{ height: '100%', width: '100%' }} alt='landing-pic'></img>
+                        <img className='landing-cat' src='../Cat.png'></img>
+                        <img className='landing-stand-read' src='../Standing-Reading.png'></img>
+                        <img className='landing-ice-cream-bike' src='../Ice Cream Bike.png'></img>
+                        <img className='landing-plant' src='../Plant 2.png'></img>
+                        <img className='landing-warning-light' src='../Warning Light.png'></img>
+                        {/* <img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/undraw_Modern_professional.png' style={{ height: '100%', width: '100%' }} alt='landing-pic'></img> */}
                     </div>
                 </div>
             </div>
