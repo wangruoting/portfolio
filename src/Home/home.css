@@ -28,6 +28,7 @@
     height: 24%;
     position: absolute;
     bottom: 0%;
+    left: 0%;
 }
 
 .landing-stand-read {
@@ -44,7 +45,7 @@
     width: auto;
     height: 200px;
     left: 34%;
-    bottom: 15%;
+    bottom: 20%;
 }
 
 .landing-plant {
@@ -52,14 +53,14 @@
     width: auto;
     height: 90px;
     right: 23%;
-    bottom: 5%;
+    bottom: 0%;
 }
 
 .landing-warning-light {
     position: absolute;
     width: auto;
     height: 300px;
-    right: 5%;
+    right: 0%;
     bottom: 0%;
 }
 
@@ -76,8 +77,15 @@
     /* text-align: left; */
     /* background-color: red; */
     padding-top: 18%;
-    padding-left: 30%;
+    padding-left: 18%;
 
+}
+
+@media screen and (max-width: 1000px) {
+    .short-self-intro {
+        margin: auto;
+        padding-left: 0%;
+    }
 }
 
 .home-name-text {
@@ -117,6 +125,28 @@
     transform: translateY(-7px);
 }
 
+
+
+.waving-lines-section {
+    height: fit-content;
+    opacity: 80%;
+    background-color: #FEFBEA;
+    /* background-color: #F6EFE2; */
+    /* background-image: linear-gradient(45DEG,
+            #EBA3A7, #F6EFE2,
+            #B9C9E5); */
+
+    /* using: https://css-generators.com/wavy-shapes/ */
+    --mask:
+        radial-gradient(111.80px at 50% 150.00px, #000 99%, #0000 101%) calc(50% - 100px) 0/200px 100%,
+        radial-gradient(111.80px at 50% -100px, #0000 99%, #000 101%) 50% 50px/200px 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+}
+
+
+
+
 .home-intro-skills {
     text-align: center;
 }
@@ -132,7 +162,7 @@
 
 .home-heading-text {
     font-weight: bolder;
-    padding-top: 12%;
+    padding-top: 7%;
 }
 
 .certificates-pic {
@@ -147,10 +177,6 @@
     padding-top: 5%;
     padding-bottom: 8%;
     /* margin-left: 7%; */
-}
-
-.home-reuse-container.services {
-    margin-top: 10%;
 }
 
 .home-reuse-container.certificates {
@@ -183,21 +209,22 @@
     text-align: center;
 } */
 
-.home-detail-service-text-container {
-    /* background-color: #f2800653; */
+/* .home-detail-service-text-container {
+    background-color: #f2800653;
     margin: 1.5%;
     padding: 3%;
     overflow: hidden;
     border-radius: 5%;
-    /* box-shadow: 5px 5px 5px 5px red; */
-}
+    box-shadow: 5px 5px 5px 5px red;
+} */
 
-.home-reuse-container.services {
+
+.home-reuse-container.skills {
     /* background-color: #FFFFF0; */
-    background-color: #FEFBEA;
-    width: max-content;
-    opacity: 80%;
-    overflow: hidden;
+    /* background-color: #FEFBEA; */
+    /* width: max-content; */
+    /* opacity: 80%; */
+    /* overflow: hidden; */
     /* border-radius: 2%; */
 }
 

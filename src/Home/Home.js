@@ -32,20 +32,28 @@ export default function Home() {
                 <h5>Website coding <span><i class="fa-solid fa-check"></i></span>UI/ UX design <span><i class="fa-solid fa-check"></i></span> Deploy on cloud <span><i class="fa-solid fa-check"></i></span>Agile team <span><i class="fa-solid fa-check"></i></span>Independent Project <span><i class="fa-solid fa-check"></i></span></h5>
             </div>
 
-            <div className='home-reuse-container services'>
+            {/* waving lines */}
+            <div className='waving-lines-section'>
+                {/* <div className='home-reuse-container skills'> */}
                 <div className='home-heading-text-container'>
                     <h2 className='home-heading-text'>Skills <i class="fa-solid fa-wand-magic-sparkles" style={{ fontSize: '16px' }}></i></h2>
                 </div>
 
-                <div className='home-detail-service-text'>
-                    <div className='home-detail-service-text-container'>
-                        <h5>Hosting Website with alternative architecture solutions</h5>
-                        <h5>Front end coding using multiple languages</h5>
-                        <h5>Database communication</h5>
-                        <h5>Public API into uses</h5>
-                        <h5>UI/ UX design with simplicity style</h5>
-                    </div>
+                <div className='skillsets'>
+
                 </div>
+
+                {/* <div className='home-detail-service-text'>
+                        <div className='home-detail-service-text-container'>
+                            <h5>Hosting Website with alternative architecture solutions</h5>
+                            <h5>Front end coding using multiple languages</h5>
+                            <h5>Database communication</h5>
+                            <h5>Public API into uses</h5>
+                            <h5>UI/ UX design with simplicity style</h5>
+                        </div>
+                    </div> */}
+                {/* </div> */}
+
             </div>
 
             <div className='home-reuse-container certificates'>
