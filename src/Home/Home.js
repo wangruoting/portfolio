@@ -36,11 +36,33 @@ export default function Home() {
             <div className='waving-lines-section'>
                 {/* <div className='home-reuse-container skills'> */}
                 <div className='home-heading-text-container'>
-                    <h2 className='home-heading-text'>Skills <i class="fa-solid fa-wand-magic-sparkles" style={{ fontSize: '16px' }}></i></h2>
+                    <h2 className='home-heading-text skills'>Skills <i class="fa-solid fa-wand-magic-sparkles" style={{ fontSize: '16px' }}></i></h2>
                 </div>
 
-                <div className='skillsets'>
+                <div className='skillsets-section'>
+                    <div className='skillsets'>
+                        <h3>Frontend</h3>
+                        <h5>React <span><i class="fa-solid fa-check"></i></span></h5>
+                        <h5>CSS <span><i class="fa-solid fa-check"></i></span></h5>
+                        <h5>HTML <span><i class="fa-solid fa-check"></i></span></h5>
+                        <h5>Javascript <span><i class="fa-solid fa-check"></i></span></h5>
+                    </div>
 
+                    <div className='skillsets'>
+                        <h3>Backend</h3>
+                        <h5>Python <span><i class="fa-solid fa-check"></i></span></h5>
+                        <h5>Java <span><i class="fa-solid fa-check"></i></span></h5>
+                        <h5>ASP.NET <span><i class="fa-solid fa-check"></i></span></h5>
+                        <h5>Node JS <span><i class="fa-solid fa-check"></i></span></h5>
+                    </div>
+
+                    <div className='skillsets'>
+                        <h3>Cloud & Database</h3>
+                        <a href='https://www.credly.com/badges/8aa6447d-bd4d-4cd2-aae9-e7fc8f5d214d' target="_blank" style={{ color: 'black' }}><h5>AWS (Certified Practitioner) <span><i class="fa-solid fa-check"></i></span></h5></a>
+                        <h5>Oracle Cloud <span><i class="fa-solid fa-check"></i></span></h5>
+                        <h5>MySQL <span><i class="fa-solid fa-check"></i></span></h5>
+                        <h5>NoSQL <span><i class="fa-solid fa-check"></i></span></h5>
+                    </div>
                 </div>
 
                 {/* <div className='home-detail-service-text'>
@@ -56,16 +78,14 @@ export default function Home() {
 
             </div>
 
-            <div className='home-reuse-container certificates'>
+            {/* <div className='home-reuse-container certificates'>
                 <div className='home-heading-text-container'>
                     <h2 className='home-heading-text'>Certified Skills <i class="fa-solid fa-ranking-star" style={{ fontSize: '16px' }}></i></h2>
-                    {/* <h3><i class="fa-solid fa-ranking-star"></i></h3> */}
                 </div>
 
                 <div className='certificates-pic-container'>
                     <div className='certificates-pic'>
                         <img src='/aws-badge.png' style={{ height: '100%', width: '100%' }} alt='aws-cert-pic'></img>
-                        {/* <a href='https://www.credly.com/badges/8aa6447d-bd4d-4cd2-aae9-e7fc8f5d214d' target="_blank"><button className='button verify-btn'>Verify Me</button></a> */}
                     </div>
 
                     <div className='cert-verify-button-container'>
@@ -73,7 +93,7 @@ export default function Home() {
                     </div>
                 </div>
 
-            </div>
+            </div> */}
 
             <div className='projects-section-container'>
                 <div className='introduce-projects'>
