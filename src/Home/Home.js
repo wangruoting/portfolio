@@ -2,7 +2,36 @@ import './home.css';
 import React from 'react';
 import { Link } from "react-router-dom";
 
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
+
 export default function Home() {
+
+    // project carousal
+    const responsive = {
+        0: {
+            items: 1
+        },
+        568: {
+            items: 2
+        },
+        1024: {
+            items: 3,
+            itemsFit: 'contain'
+        },
+    };
+
+    // project carousal image
+    const items = [
+        <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><p>hello</p></div>,
+        <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><p>hello</p></div>,
+        <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><p>hello</p></div>,
+        <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><p>hello</p></div>,
+    ];
+
+    // footer year
+    const currentYear = new Date().getFullYear();
+
     return (
         <>
             <div className='home-reuse-container'>
@@ -96,10 +125,21 @@ export default function Home() {
 
             <div className='projects-section-container'>
                 <div className='introduce-projects'>
-                    <h2>Projects</h2>
+                    <h2>Projects  <i class="fa-solid fa-palette" style={{ fontSize: '20px' }}></i></h2>
                 </div>
 
-                <div className='home-reuse-container projects1'>
+                <AliceCarousel
+                    mouseTracking
+                    items={items}
+                    responsive={responsive}
+                    controlsStrategy="alternate"
+
+                    renderPrevButton={() => { return <button className='button project-btn'>previous</button> }}
+                    renderNextButton={() => { return <button className='button project-btn'>next</button> }}
+                />
+
+
+                {/* <div className='home-reuse-container projects1'>
                     <div className='ie-pic-container'>
                         <Link to="/ie" className='redirect-to-each-project pic'>
                             <div className='ie-pic'>
@@ -115,6 +155,18 @@ export default function Home() {
                         </Link>
                         <h5 style={{ opacity: "50%" }}>Coder & Designer</h5>
                     </div>
+                </div> */}
+            </div>
+
+
+            <div className='footer'>
+                <h5><span>&copy;</span>{currentYear} wangruoting</h5>
+                <div className='footer-icon'>
+                    <p className='footer-item'><i className="fa-brands fa-linkedin"></i></p>
+                    <p> |</p>
+                    <p className='footer-item'><i className="fa-brands fa-github"></i></p>
+                    <p> |</p>
+                    <p className='footer-item'><i class="fa-solid fa-file"></i></p>
                 </div>
             </div>
         </>
