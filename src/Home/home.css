@@ -138,9 +138,9 @@ div {
     -webkit-mask: var(--mask);
     mask: var(--mask);
 
-    /* border: 1px solid transparent; */
-
-    /* position: relative; */
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 2%;
+    background-image: linear-gradient(to bottom, #FEFBEA, #FDF8E1);
 }
 
 /* .waving-lines-section {
@@ -200,6 +200,11 @@ div {
 @media screen and (max-width: 1000px) {
     .home-heading-text.skills {
         padding-top: 15%;
+    }
+
+    .waving-lines-section {
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 0;
     }
 }
 
@@ -265,7 +270,7 @@ div {
             #F4D7AE,
             #FEFBEA); */
 
-    background-color: #F4D7AE;
+    /* background-color: #F4D7AE; */
 
 }
 
