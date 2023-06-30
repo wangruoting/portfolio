@@ -1,6 +1,6 @@
 import './home.css';
 import React from 'react';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
@@ -26,7 +26,7 @@ export default function Home() {
         <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><p>hello</p></div>,
         <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><p>hello</p></div>,
         <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><p>hello</p></div>,
-        <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><p>hello</p></div>,
+        <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><p>hello</p></div>
     ];
 
     // footer year
@@ -58,39 +58,39 @@ export default function Home() {
             </div>
 
             <div className='home-intro-skills'>
-                <h5>Website coding <span><i class="fa-solid fa-check"></i></span>UI/ UX design <span><i class="fa-solid fa-check"></i></span> Deploy on cloud <span><i class="fa-solid fa-check"></i></span>Agile team <span><i class="fa-solid fa-check"></i></span>Independent Project <span><i class="fa-solid fa-check"></i></span></h5>
+                <h5>Website coding <span><i className="fa-solid fa-check"></i></span>UI/ UX design <span><i className="fa-solid fa-check"></i></span> Deploy on cloud <span><i className="fa-solid fa-check"></i></span>Agile team <span><i className="fa-solid fa-check"></i></span>Independent Project <span><i className="fa-solid fa-check"></i></span></h5>
             </div>
 
             {/* waving lines */}
             <div className='waving-lines-section'>
                 {/* <div className='home-reuse-container skills'> */}
                 <div className='home-heading-text-container'>
-                    <h2 className='home-heading-text skills'>Skills <i class="fa-solid fa-wand-magic-sparkles" style={{ fontSize: '16px' }}></i></h2>
+                    <h2 className='home-heading-text skills'>Skills <i className="fa-solid fa-wand-magic-sparkles" style={{ fontSize: '16px' }}></i></h2>
                 </div>
 
                 <div className='skillsets-section'>
                     <div className='skillsets'>
                         <h3>Frontend</h3>
-                        <h5>React <span><i class="fa-solid fa-check"></i></span></h5>
-                        <h5>CSS <span><i class="fa-solid fa-check"></i></span></h5>
-                        <h5>HTML <span><i class="fa-solid fa-check"></i></span></h5>
-                        <h5>Javascript <span><i class="fa-solid fa-check"></i></span></h5>
+                        <h5>React <span><i className="fa-solid fa-check"></i></span></h5>
+                        <h5>CSS <span><i className="fa-solid fa-check"></i></span></h5>
+                        <h5>HTML <span><i className="fa-solid fa-check"></i></span></h5>
+                        <h5>Javascript <span><i className="fa-solid fa-check"></i></span></h5>
                     </div>
 
                     <div className='skillsets'>
                         <h3>Backend</h3>
-                        <h5>Python <span><i class="fa-solid fa-check"></i></span></h5>
-                        <h5>Java <span><i class="fa-solid fa-check"></i></span></h5>
-                        <h5>ASP.NET <span><i class="fa-solid fa-check"></i></span></h5>
-                        <h5>Node JS <span><i class="fa-solid fa-check"></i></span></h5>
+                        <h5>Python <span><i className="fa-solid fa-check"></i></span></h5>
+                        <h5>Java <span><i className="fa-solid fa-check"></i></span></h5>
+                        <h5>ASP.NET <span><i className="fa-solid fa-check"></i></span></h5>
+                        <h5>Node JS <span><i className="fa-solid fa-check"></i></span></h5>
                     </div>
 
                     <div className='skillsets'>
                         <h3>Cloud & Database</h3>
-                        <a href='https://www.credly.com/badges/8aa6447d-bd4d-4cd2-aae9-e7fc8f5d214d' target="_blank" style={{ color: 'black' }}><h5>AWS (Certified Practitioner) <span><i class="fa-solid fa-check"></i></span></h5></a>
-                        <h5>Oracle Cloud <span><i class="fa-solid fa-check"></i></span></h5>
-                        <h5>MySQL <span><i class="fa-solid fa-check"></i></span></h5>
-                        <h5>NoSQL <span><i class="fa-solid fa-check"></i></span></h5>
+                        <a href='https://www.credly.com/badges/8aa6447d-bd4d-4cd2-aae9-e7fc8f5d214d' target="_blank" style={{ color: 'black' }}><h5>AWS (Certified Practitioner) <span><i className="fa-solid fa-check"></i></span></h5></a>
+                        <h5>Oracle Cloud <span><i className="fa-solid fa-check"></i></span></h5>
+                        <h5>MySQL <span><i className="fa-solid fa-check"></i></span></h5>
+                        <h5>NoSQL <span><i className="fa-solid fa-check"></i></span></h5>
                     </div>
                 </div>
 
@@ -125,10 +125,11 @@ export default function Home() {
 
             <div className='projects-section-container'>
                 <div className='introduce-projects'>
-                    <h2>Projects  <i class="fa-solid fa-palette" style={{ fontSize: '20px' }}></i></h2>
+                    <h2>Projects  <i className="fa-solid fa-palette" style={{ fontSize: '20px' }}></i></h2>
                 </div>
 
                 <AliceCarousel
+
                     mouseTracking
                     items={items}
                     responsive={responsive}
@@ -166,7 +167,8 @@ export default function Home() {
                     <p> |</p>
                     <p className='footer-item'><i className="fa-brands fa-github"></i></p>
                     <p> |</p>
-                    <p className='footer-item'><i class="fa-solid fa-file"></i></p>
+                    {/* <p className='footer-item'><i class="fa-solid fa-file"></i></p> */}
+                    <i className="fa-regular fa-file-lines"></i>
                 </div>
             </div>
         </>

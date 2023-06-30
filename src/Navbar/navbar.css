@@ -11,6 +11,11 @@ body {
     font-family: 'Noto Sans', sans-serif;
     letter-spacing: 1px;
     word-spacing: 2px;
+
+    /* background-image: linear-gradient(to right,
+            #edf5c1,
+            #AAD7EA,
+            #FADCD2); */
 }
 
 .nav {
