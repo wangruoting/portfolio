@@ -24,8 +24,8 @@ export default function Home() {
     // project carousal image
     const items = [
         <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><p>hello</p></div>,
-        <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><p>hello</p></div>,
-        <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><p>hello</p></div>,
+        <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/FIT5046_project_cover.png'></img><p>hello</p></div>,
+        <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/5225-cover.png'></img><p>hello</p></div>,
         <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><p>hello</p></div>
     ];
 

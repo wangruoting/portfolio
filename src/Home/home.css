@@ -127,6 +127,13 @@ div {
     transform: translateY(-7px);
 }
 
+.button.project-btn:focus,
+.button.resume-btn:focus {
+    background-color: #FFF36D;
+    box-shadow: 0px 8px 13px #f2800653;
+    color: #E69C43;
+    transform: translateY(-7px);
+}
 
 .waving-lines-section {
     width: 100%;
@@ -200,7 +207,7 @@ div {
 
 @media screen and (max-width: 1000px) {
     .home-heading-text.skills {
-        padding-top: 15%;
+        padding-top: 20%;
     }
 
     .waving-lines-section {
@@ -307,7 +314,8 @@ div {
 
 .project-pic img {
     /* object-fit: contains; */
-    width: 20rem;
+    width: auto;
+    height: 13rem;
     border-radius: 5%;
     box-shadow: 2px 4px 8px #f3f4cb;
 }
@@ -327,6 +335,7 @@ div {
     transition: 0.4s;
     background-color: #f3f4cb !important;
 }
+
 
 /* .button.project-pic:hover {
     background-color: #FFF36D;
