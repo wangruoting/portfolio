@@ -1,6 +1,6 @@
 import './home.css';
 import React from 'react';
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
@@ -23,10 +23,15 @@ export default function Home() {
 
     // project carousal image
     const items = [
-        <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><p>hello</p></div>,
-        <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/FIT5046_project_cover.png'></img><p>hello</p></div>,
-        <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/5225-cover.png'></img><p>hello</p></div>,
-        <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><p>hello</p></div>
+        <Link to="/FIT5046" className='redirect-to-project'>
+            <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/FIT5046_project_cover.png'></img><h5>Missing Pets - Android App</h5></div>
+        </Link>,
+        <Link to="/ie" className='redirect-to-project'>
+            <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><h5>Protect Children from Infections - Website</h5></div>
+        </Link>,
+        <Link to="/FIT5225" className='redirect-to-project'>
+            <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/5225-cover.png'></img><h5>Cloud Image Storage - Website</h5></div></Link>,
+        // <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><h5>hello</h5></div>
     ];
 
     // footer year
@@ -163,9 +168,9 @@ export default function Home() {
             <div className='footer'>
                 <h5><span>&copy;</span>{currentYear} wangruoting</h5>
                 <div className='footer-icon'>
-                    <p className='footer-item'><i className="fa-brands fa-linkedin"></i></p>
+                    <a href='http://www.linkedin.com/in/ruoting-wang' target="_blank" style={{ color: 'black' }}><p className='footer-item'><i className="fa-brands fa-linkedin"></i></p></a>
                     <p> |</p>
-                    <p className='footer-item'><i className="fa-brands fa-github"></i></p>
+                    <a href='https://github.com/wangruoting' target='_blank' style={{ color: 'black' }}><p className='footer-item'><i className="fa-brands fa-github"></i></p></a>
                     <p> |</p>
                     {/* <p className='footer-item'><i class="fa-solid fa-file"></i></p> */}
                     <i className="fa-regular fa-file-lines"></i>
