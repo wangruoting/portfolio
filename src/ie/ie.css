@@ -1,12 +1,9 @@
-/* .whole-page-container {
+.whole-page-container {
     padding: 5%;
-    background-color: #faf8f0;
+    padding-left: 10%;
     width: 100%;
     height: 100%;
-    box-shadow: 0px 0px 2px #AC4FC6;
-} */
-
-.title {}
+}
 
 .ie-home-page-container {
     margin-top: 5%;
@@ -14,7 +11,13 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.ie-landing-pic {
+    width: 80%;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 2px 4px 8px #f3f4cb;
+}
+
 .ie-description-section {
     width: 100%;
-    padding-left: 5%;
 }

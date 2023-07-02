@@ -1,0 +1,23 @@
+.whole-page-container {
+    padding: 5%;
+    padding-left: 10%;
+    width: 100%;
+    height: 100%;
+}
+
+.FIT5225-home-page-container {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.FIT5225-landing-pic {
+    width: 80%;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 2px 4px 8px #f3f4cb;
+}
+
+.FIT5225-description-section {
+    width: 100%;
+}

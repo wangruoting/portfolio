@@ -29,6 +29,8 @@ body {
             rgba(0, 0, 255, 0) 70.71%),
         radial-gradient(circle at 93.3% 75%,
             #edf5c1, rgba(0, 255, 0, 0) 70.71%) beige;
+
+    background-repeat: no-repeat;
 }
 
 .nav {
