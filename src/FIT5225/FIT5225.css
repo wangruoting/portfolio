@@ -6,7 +6,7 @@
     min-height: 100vh;
 }
 
-.FIT5225-home-page-container {
+.FIT5225-intro-container {
     margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

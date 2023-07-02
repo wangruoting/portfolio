@@ -6,10 +6,10 @@
     min-height: 100vh;
 }
 
-.FIT5046-home-page-container {
+.FIT5046-intro-container {
     margin-top: 5%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .FIT5046-landing-pic {
@@ -21,4 +21,15 @@
 
 .FIT5046-description-section {
     width: 100%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .FIT5046-description-section {
+        padding-top: 10%;
+    }
+
+    .FIT5046-landing-pic {
+        padding-top: 5%;
+    }
 }
