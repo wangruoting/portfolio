@@ -12,24 +12,30 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
-.FIT5046-landing-pic {
-    width: 80%;
-    height: auto;
-    border-radius: 5%;
-    box-shadow: 2px 4px 8px #f3f4cb;
-}
-
 .FIT5046-description-section {
     width: 100%;
     margin: auto;
 }
 
+.FIT5046-pic {
+    border-radius: 5%;
+    box-shadow: 2px 4px 8px #f3f4cb;
+    margin-bottom: 10%;
+    width: 75%;
+    height: auto;
+}
+
+.FIT5046-pic.landing {
+    width: 80%;
+    height: auto;
+}
+
 @media screen and (max-width: 1000px) {
-    .FIT5046-description-section {
-        padding-top: 10%;
+    .FIT5046-pic.landing {
+        padding-top: 5%;
     }
 
-    .FIT5046-landing-pic {
-        padding-top: 5%;
+    .FIT5046-description-section {
+        padding-bottom: 10%;
     }
 }
