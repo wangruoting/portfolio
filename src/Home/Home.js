@@ -34,7 +34,7 @@ export default function Home() {
             <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><h5>Protect Children from Infections - Website</h5></div>
         </Link>,
         <Link to="/FIT5225" className='redirect-to-project'>
-            <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/5225-cover.png'></img><h5>Image Detection & Storage - Website</h5></div></Link>,
+            <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/5225-cover.png'></img><h5>iTag - Website</h5></div></Link>,
         // <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><h5>hello</h5></div>
     ];
 
