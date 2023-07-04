@@ -40,7 +40,7 @@ export default function FIT5225() {
 
                 <div className='FIT5225-intro-container'>
                     <div>
-                        <img className='FIT5225-pic login' src='../5046-login.png'></img>
+                        <img className='FIT5225-pic login' src='../5225-diagram.jpg'></img>
                     </div>
 
                     <div className='FIT5046-description-section login-desc'>

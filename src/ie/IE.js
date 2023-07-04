@@ -45,7 +45,7 @@ export default function IE() {
                 <div className='ie-intro-container'>
                     {/* vaccine description section */}
                     <div>
-                        <video className='video vaccine' loop autoPlay muted>
+                        <video className='video vaccine' preload loop autoPlay muted playsInline='false'>
                             <source src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/2x-fast-ie-vaccine-edit.mp4' type="video/mp4"></source>
                         </video>
                     </div>
@@ -58,7 +58,7 @@ export default function IE() {
 
                     {/* outdoor 3d section */}
                     <div>
-                        <video className='video 3d' loop autoPlay muted>
+                        <video className='video 3d' preload loop autoPlay muted playsInline='false'>
                             <source src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/2x-fast-ie-3d-edit.mp4' type="video/mp4"></source>
                         </video>
                     </div>
@@ -70,7 +70,7 @@ export default function IE() {
 
                     {/* outdoor quiz description section */}
                     <div>
-                        <video className='video outdoor-quiz' loop autoPlay muted>
+                        <video className='video outdoor-quiz' preload loop autoPlay muted playsInline='false'>
                             <source src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/2x-fast-outdoor-quiz.mp4' type="video/mp4"></source>
                         </video>
                     </div>
@@ -80,6 +80,7 @@ export default function IE() {
                         <h4>Upon completion of the quiz, an interactive result analysis will be presented, showcasing the user's proficiency in different areas and providing insights on sections that require improvement.</h4>
                         {/* <h5 style={{ color: 'GrayText' }}>Implemented using </h5> */}
                     </div>
+
                     {/* outdoor intro section */}
                     {/* <div>
                         <video className='video outdoor-intro' loop autoPlay muted>
