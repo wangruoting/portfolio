@@ -1,7 +1,12 @@
 import './FIT5046.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 export default function FIT5046() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <div className='whole-page-container'>
@@ -17,17 +22,20 @@ export default function FIT5046() {
 
                     <div className='FIT5046-description-section intro'>
                         <h3>
-                            An android app helps user to post & find their lost pets.
+                            Android app helps user to post & find their lost pets.
                         </h3>
                         <h5 style={{ color: 'GrayText' }}>
-                            Stack Used: Java, XML, Android Studio
+                            Stacks: Java, XML, Android Studio
                             {/* Third-Party Login, Mapbox API, Weather API, Firebase Realtime Database, */}
                         </h5>
+                        <a href='https://github.com/May001122/FIT5046' target='_blank'>
+                            <button className='source-code-btn'>Source Code</button>
+                        </a>
                     </div>
                 </div>
                 <h2>Project Demo <i className="fa-solid fa-hand-sparkles"></i></h2>
                 <h5 style={{ color: 'GrayText', paddingTop: '10px' }}>Project purpose: Safely bring lost pets home.</h5>
-                <h5 style={{ color: 'GrayText' }}>Working in a multicultural agile team of 4.</h5>
+                <h5 style={{ color: 'GrayText' }}>Worked in a multicultural agile team of 4.</h5>
 
                 <div className='FIT5046-intro-container'>
                     <div>
@@ -35,9 +43,9 @@ export default function FIT5046() {
                     </div>
 
                     <div className='FIT5046-description-section login-desc'>
-                        <h4>User is required to login to secure their data and pets info.</h4>
+                        <h4>Sign up & third-party login was implemented for user authentication.</h4>
                         <h5 style={{ color: 'GrayText' }}>
-                            Implemented using FaceBook SDK & Firebase Database.
+                            Implemented using FaceBook SDK, Firebase API & Room Database.
                         </h5>
                     </div>
                     <div>
@@ -45,8 +53,9 @@ export default function FIT5046() {
                     </div>
                     <div className='FIT5046-description-section home-desc'>
                         <h4>
-                            Home page showing post details of current missing or found pets.
-                        </h4>
+                            Home page shows post details of current missing or found pets.
+                        </h4><br></br><br></br>
+                        <h4>Room database was used to store user data and pets info locally.</h4>
                         <h5 style={{ color: 'GrayText' }}>
                             Implemented using Android room database, retrofit and Open Weather API.
                         </h5>
@@ -57,7 +66,10 @@ export default function FIT5046() {
                     </div>
                     <div className='FIT5046-description-section pet-detail-desc'>
                         <h4>
-                            Each pet details pop up along with options that user prefer to choose.
+                            Each pet details pop up along with options that user prefer to navigate.
+                        </h4><br></br><br></br>
+                        <h4>
+                            Once user granted permission to access the current location, navigation between user and the lost pet is provided.
                         </h4>
                         <h5 style={{ color: 'GrayText' }}>
                             Implemented using Mapbox API, FaceBook SDK.

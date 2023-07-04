@@ -1,11 +1,15 @@
 import './home.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
 export default function Home() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     // project carousal
     const responsive = {
