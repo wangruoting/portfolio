@@ -14,7 +14,7 @@ export default function IE() {
                 <div className='title'>
                     <h2>Protect Children From Infections - Graduate Project</h2>
                     <h5 style={{ color: 'GrayText' }}>IT for social good project</h5>
-                    <h5 style={{ color: 'GrayText' }}>October 2022 - Developer & Designer</h5>
+                    <h5 style={{ color: 'GrayText' }}>August 2022 - Full Stack Developer & Designer</h5>
                 </div>
 
                 <div className='ie-intro-container'>

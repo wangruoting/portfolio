@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); */
+
 
 * {
     box-sizing: border-box;
@@ -9,8 +11,10 @@ body {
     margin: 0;
     background-color: #FADCD2;
     font-family: 'Noto Sans', sans-serif;
-    letter-spacing: 1px;
-    word-spacing: 2px;
+
+    /* font-family: 'Open Sans', sans-serif; */
+    letter-spacing: 0.8px;
+    word-spacing: 0.8px;
 
     /* background: radial-gradient(at 0% 10%, #edf5c1 10px, #AAD7EA 16%,
             #FADCD2 25%); */
