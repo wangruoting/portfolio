@@ -39,12 +39,10 @@ body {
 
 
 .nav {
-    /* background-color: rgb(255, 243, 109); */
     color: black;
     font-family: 'Noto Sans', sans-serif;
     display: flex;
     justify-content: center;
-    /* align-items: stretch; */
     gap: 2rem;
     padding: 1rem 1rem;
     align-items: center;
@@ -72,23 +70,10 @@ body {
 }
 
 .nav li.active {
-    /* background-color: azure; */
+    cursor: pointer;
 }
 
 .nav li:hover {
-    color: #CEF5EB;
-    /* color: #96A885; */
-    transition: 0.5s;
-}
-
-.linkedin-logo {
-    position: absolute;
-    right: 5%;
-    font-size: x-large;
-    color: #0079BF;
-}
-
-.linkedin-logo:hover {
-    color: #0091E6;
+    color: #c4d36d;
     transition: 0.5s;
 }

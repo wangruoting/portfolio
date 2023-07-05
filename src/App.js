@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 import Navbar from './Navbar/Navbar';
 import Project from './Project/Project.js';
@@ -12,25 +13,49 @@ import FIT5032 from './FIT5032/FIT5032.js';
 import IE from './ie/IE.js';
 import Contact from './Contact/Contact.js';
 import { Route, Routes } from 'react-router-dom';
-import React from 'react';
+
 
 function App() {
+
+  // control if open contact section
+  const [isOpen, setIsOpen] = useState(false);
+  const [closeBtnDisplay, setCloseBtnDisplay] = useState('hidden');
+
+  // control if open contact section
+  const handleClickToOpen = () => {
+    setIsOpen(true);
+    setCloseBtnDisplay('visible');
+  }
+
+  // control if open contact section
+  const handleClickToClose = () => {
+    setIsOpen(false);
+    setCloseBtnDisplay('hidden');
+  }
+
   return (
     <>
-      <Navbar />
+      <Navbar handleClick={handleClickToOpen} />
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Project />} />
+          {/* <Route path="/project" element={<Project />} />
           <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/resume" element={<Resume />} /> */}
           <Route path="/ie" element={<IE />} />
           <Route path="/fit5225" element={<FIT5225 />} />
           <Route path="/fit5046" element={<FIT5046 />} />
-          <Route path="/fit5147" element={<FIT5147 />} />
-          <Route path="/fit5032" element={<FIT5032 />} />
+          {/* <Route path="/fit5147" element={<FIT5147 />} />
+          <Route path="/fit5032" element={<FIT5032 />} /> */}
         </Routes>
-        <Contact />
+
+        <Contact
+          // pass props to contact component
+          isOpen={isOpen}
+          handleClickToOpen={handleClickToOpen}
+          handleClickToClose={handleClickToClose}
+          closeBtnDisplay={closeBtnDisplay}
+        />
       </div>
     </>
   );

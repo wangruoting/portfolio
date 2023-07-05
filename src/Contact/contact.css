@@ -1,18 +1,102 @@
 .chatbot {
     position: fixed;
-    bottom: 5%;
-    right: 5%;
-    height: 25rem;
-    width: 18rem;
-    background-color: white;
+    bottom: 3%;
+    right: 3%;
+    height: 30rem;
+    width: 20rem;
+    background-color: #F3F3F3;
     transition: all 0.3s ease-in-out;
     border-radius: 15px;
     cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .chatbot.closed {
     border-radius: 50%;
-    background-color: rgb(203, 184, 234);
+    background-color: #c4d36d;
     height: 5rem;
     width: 5rem;
+
+    animation-name: circle-chatbot;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.chatbot.closed:hover {
+    opacity: 70%;
+}
+
+@keyframes circle-chatbot {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.closePopUpBtn {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    transition: all 0.2s ease-in-out;
+
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    outline: none;
+}
+
+.closePopUpBtn:hover {
+    background-color: #FFF36D;
+    box-shadow: 0px 8px 13px #f2800653;
+    color: #E69C43;
+    transform: translateY(-7px);
+}
+
+.my-icon-section {
+    width: 100%;
+    height: 6rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #c4d36d;
+}
+
+.chatbot-icon {
+    width: 2.5rem;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding-top: 3%;
+}
+
+.chatbot-hi-text {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-top: 3%;
+    color: graytext;
+}
+
+.message-icon {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    font-size: 2rem;
+    transform: translate(50%, 50%);
 }

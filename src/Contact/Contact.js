@@ -1,48 +1,27 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './contact.css';
 
-export default function Contact() {
+export default function Contact(props) {
 
-    const [isOpen, setIsOpen] = useState(false);
-
-    const [openBtnOpacity, setBtnOpenOpacity] = useState(100);
-    const [closeBtnOpacity, setCloseBtnOpacity] = useState(0);
-
-    const handleClick = () => {
-        setIsOpen(!isOpen)
-    }
-
-    const handleOpenPopUp = () => {
-        setIsOpen(true);
-
-        setBtnOpenOpacity(0);
-        setCloseBtnOpacity(100);
-    }
-
-    const handleClosePopUp = () => {
-        setIsOpen(false);
-
-        setBtnOpenOpacity(100);
-        setCloseBtnOpacity(0);
-    }
+    const { isOpen, handleClickToOpen, handleClickToClose, closeBtnDisplay } = props
 
     return (
         <>
-            <div className={isOpen ? 'chatbot' : 'chatbot closed'} onClick={handleClick}>
-                {/* <button className='open-pop-up' onClick={handleOpenPopUp} style={{ opacity: openBtnOpacity }}>
-                    Contact
-                </button> */}
-
+            <div className={isOpen ? 'chatbot' : 'chatbot closed'} onClick={handleClickToOpen}>
+                {!isOpen && <i className="fa-regular fa-comment message-icon"></i>}
                 {isOpen && (
                     <div>
-                        <div>
-                            Pop up
+                        <div className='my-icon-section'>
+                            <img className='chatbot-icon' src='../Wavy Buddies - Avatar.png'></img>
+                            <h5 className='chatbot-hi-text'>Hi! Glad to see you!</h5>
                         </div>
-                        <button className='close-pop-up' onClick={handleClosePopUp} style={{ opacity: closeBtnOpacity }}>Close</button>
+                        <div>
+                            message section
+                        </div>
                     </div>
                 )}
-
             </div>
+            <button className='closePopUpBtn' onClick={handleClickToClose} style={{ visibility: closeBtnDisplay }}>Close <i class="fa-solid fa-xmark"></i></button>
         </>
     );
 }
