@@ -10,6 +10,7 @@ import FIT5046 from './FIT5046/FIT5046.js';
 import FIT5147 from './FIT5147/FIT5147.js';
 import FIT5032 from './FIT5032/FIT5032.js';
 import IE from './ie/IE.js';
+import Contact from './Contact/Contact.js';
 import { Route, Routes } from 'react-router-dom';
 import React from 'react';
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/fit5147" element={<FIT5147 />} />
           <Route path="/fit5032" element={<FIT5032 />} />
         </Routes>
+        <Contact />
       </div>
     </>
   );
