@@ -7,7 +7,6 @@
     background-color: #F3F3F3;
     transition: all 0.3s ease-in-out;
     border-radius: 15px;
-    cursor: pointer;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -16,6 +15,7 @@
     background-color: #c4d36d;
     height: 5rem;
     width: 5rem;
+    cursor: pointer;
 
     animation-name: circle-chatbot;
     animation-timing-function: linear;
@@ -41,12 +41,7 @@
     }
 }
 
-.closePopUpBtn {
-    position: fixed;
-    right: 5%;
-    bottom: 5%;
-    transition: all 0.2s ease-in-out;
-
+.email-section-btn {
     width: 100px;
     height: 30px;
     font-size: 10px;
@@ -60,9 +55,18 @@
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     outline: none;
+    transition: all 0.3s ease 0s;
 }
 
-.closePopUpBtn:hover {
+.email-section-btn.close-pop-up-btn {
+    position: fixed;
+    right: 4%;
+    bottom: 5%;
+    transition: all 0.2s ease-in-out;
+}
+
+.sumbit-email-btn:hover,
+.close-pop-up-btn:hover {
     background-color: #FFF36D;
     box-shadow: 0px 8px 13px #f2800653;
     color: #E69C43;
@@ -99,4 +103,31 @@
     bottom: 50%;
     font-size: 2rem;
     transform: translate(50%, 50%);
+}
+
+.send-email-section {
+    margin-top: 6%;
+    margin-left: 10%;
+}
+
+.email_label {
+    font-size: small;
+    font-weight: bold;
+    color: #252222;
+}
+
+.email-input {
+    border-radius: 5px;
+    width: 15rem;
+    height: 2rem;
+    background: none;
+    outline: none;
+    border-color: #c4d36d;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.email-input.message {
+    width: 15rem;
+    height: 7rem;
 }
