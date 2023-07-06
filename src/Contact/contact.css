@@ -107,6 +107,7 @@
 .send-email-section {
     margin-top: 6%;
     margin-left: 10%;
+    position: relative;
 }
 
 .email_label {
@@ -129,4 +130,29 @@
 .email-input.message {
     width: 15rem;
     height: 7rem;
+}
+
+.loader-icon {
+    position: absolute;
+    font-size: 3rem;
+    opacity: 20%;
+    right: 50%;
+    bottom: 50%;
+}
+
+.email-sent-window {
+    position: absolute;
+    width: 225px;
+    height: 55px;
+    background-color: rgb(218, 233, 190);
+    color: graytext;
+    text-align: center;
+    font-size: xx-small;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

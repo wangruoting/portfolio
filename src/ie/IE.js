@@ -78,20 +78,7 @@ export default function IE() {
                     <div className='ie-description-section outdoor-quiz'>
                         <h4>To enhance parental awareness of often-neglected infectious diseases, a quiz related to safety during outdoor play has been implemented.</h4><br></br>
                         <h4>Upon completion of the quiz, an interactive result analysis will be presented, showcasing the user's proficiency in different areas and providing insights on sections that require improvement.</h4>
-                        {/* <h5 style={{ color: 'GrayText' }}>Implemented using </h5> */}
                     </div>
-
-                    {/* outdoor intro section */}
-                    {/* <div>
-                        <video className='video outdoor-intro' loop autoPlay muted>
-                            <source src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/home-outdoor-section.mov' type="video/mp4"></source>
-                        </video>
-                    </div>
-
-                    <div className='ie-description-section outdoor-intro'>
-                        <h4>desc</h4>
-                        <h5 style={{ color: 'GrayText' }}>Implemented using </h5>
-                    </div> */}
 
                 </div>
             </div>
