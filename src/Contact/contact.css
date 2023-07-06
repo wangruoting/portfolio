@@ -82,18 +82,17 @@
 }
 
 .chatbot-icon {
-    width: 2.5rem;
-    height: auto;
+    width: auto;
+    height: 4.5rem;
     display: block;
     margin: auto;
-    padding-top: 3%;
+    clip-path: circle();
 }
 
 .chatbot-hi-text {
     display: block;
     margin: auto;
     text-align: center;
-    padding-top: 3%;
     color: graytext;
 }
 

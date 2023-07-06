@@ -29,7 +29,7 @@ export default function Contact(props) {
                 {isOpen && (
                     <div>
                         <div className='my-icon-section'>
-                            <img className='chatbot-icon' src='../Wavy Buddies - Avatar.png'></img>
+                            <img className='chatbot-icon' src='../sitting.JPG'></img>
                             <h5 className='chatbot-hi-text'>Hi! Glad to see you!</h5>
                         </div>
 
