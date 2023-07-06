@@ -37,6 +37,7 @@ function App() {
           <Route path="/ie" element={<IE />} />
           <Route path="/fit5225" element={<FIT5225 />} />
           <Route path="/fit5046" element={<FIT5046 />} />
+          <Route path='*' element={<Home />} />
         </Routes>
 
         <Contact
