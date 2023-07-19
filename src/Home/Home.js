@@ -48,7 +48,7 @@ export default function Home() {
                     <h2 className='home-name-text'>Ruoting Wang</h2>
                     <h5 className='home-self-intro-text' style={{ opacity: "50%" }}>Full time software developer;  Casual reader</h5>
                     <div className='resume-button-container'>
-                        <button className='button resume-btn'>Resume</button>
+                        <button className='button resume-btn'><a href='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/Portfolio+CV+-+Wang+Ruoting.pdf' target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>Resume</a></button>
                     </div>
                 </div>
                 <div className='profile-pic-container'>
