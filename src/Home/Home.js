@@ -126,7 +126,7 @@ export default function Home() {
                     <p> |</p>
                     <a href='https://github.com/wangruoting' target='_blank' style={{ color: 'black' }}><p className='footer-item'><i className="fa-brands fa-github"></i></p></a>
                     <p> |</p>
-                    <i className="fa-regular fa-file-lines"></i>
+                    <a href='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/Portfolio+CV+-+Wang+Ruoting.pdf' target="_blank" style={{ color: 'black' }}><p className='footer-item'><i className="fa-regular fa-file-lines"></i></p></a>
                 </div>
             </div>
         </>
