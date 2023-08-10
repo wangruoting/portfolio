@@ -27,15 +27,18 @@ export default function Home() {
 
     // project carousal image
     const items = [
-        <Link to="/FIT5046" className='redirect-to-project'>
-            <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/FIT5046_project_cover.png'></img><h5>Missing Pets - Android App</h5></div>
+        <Link to="/IconGenerator" className='redirect-to-project'>
+            <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/imagin-landing.png'></img><h5>Imagin - SaaS Web App</h5></div>
         </Link>,
         <Link to="/ie" className='redirect-to-project'>
             <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><h5>Protect Children from Infections - Website</h5></div>
         </Link>,
+        <Link to="/FIT5046" className='redirect-to-project'>
+            <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/FIT5046_project_cover.png'></img><h5>Missing Pets - Android App</h5></div>
+        </Link>,
         <Link to="/FIT5225" className='redirect-to-project'>
             <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/5225-cover.png'></img><h5>iTag - Website</h5></div></Link>,
-        // <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/ie-home+page+full.png'></img><h5>hello</h5></div>
+        // <div className="project-pic"><img src='https://letsstoreinfolalal.s3.ap-southeast-2.amazonaws.com/imagin-landing.png'></img><h5>hello</h5></div>
     ];
 
     // footer year
@@ -63,7 +66,7 @@ export default function Home() {
             </div>
 
             <div className='home-intro-skills'>
-                <h5>Website coding <span><i className="fa-solid fa-check"></i></span>UI/ UX design <span><i className="fa-solid fa-check"></i></span> Deploy on cloud <span><i className="fa-solid fa-check"></i></span>Agile team <span><i className="fa-solid fa-check"></i></span>Independent Project <span><i className="fa-solid fa-check"></i></span></h5>
+                <h5>Website coding <span><i className="fa-solid fa-check"></i></span>CI/ CD <span><i className="fa-solid fa-check"></i></span>UI/ UX design <span><i className="fa-solid fa-check"></i></span> Cloud services <span><i className="fa-solid fa-check"></i></span>Agile team <span><i className="fa-solid fa-check"></i></span>Independent Project <span><i className="fa-solid fa-check"></i></span></h5>
             </div>
 
             {/* waving lines */}
@@ -77,9 +80,11 @@ export default function Home() {
                     <div className='skillsets'>
                         <h3>Frontend</h3>
                         <h5>React <span><i className="fa-solid fa-check"></i></span></h5>
+                        <h5>Next JS <span><i className="fa-solid fa-check"></i></span></h5>
+                        <h5>TypeScript <span><i className="fa-solid fa-check"></i></span></h5>
                         <h5>CSS <span><i className="fa-solid fa-check"></i></span></h5>
                         <h5>HTML <span><i className="fa-solid fa-check"></i></span></h5>
-                        <h5>Javascript <span><i className="fa-solid fa-check"></i></span></h5>
+                        {/* <h5>Javascript <span><i className="fa-solid fa-check"></i></span></h5> */}
                     </div>
 
                     <div className='skillsets'>
@@ -96,6 +101,7 @@ export default function Home() {
                         <h5>Oracle Cloud <span><i className="fa-solid fa-check"></i></span></h5>
                         <h5>MySQL <span><i className="fa-solid fa-check"></i></span></h5>
                         <h5>NoSQL <span><i className="fa-solid fa-check"></i></span></h5>
+                        <h5>PostgresSQL <span><i className="fa-solid fa-check"></i></span></h5>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
-
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); */
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -10,9 +7,9 @@
 body {
     margin: 0;
     background-color: #FADCD2;
-    font-family: 'Noto Sans', sans-serif;
 
-    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Nunito', sans-serif;
+
     letter-spacing: 0.8px;
     word-spacing: 0.8px;
 
@@ -40,7 +37,7 @@ body {
 
 .nav {
     color: black;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     display: flex;
     justify-content: center;
     gap: 2rem;

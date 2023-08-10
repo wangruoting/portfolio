@@ -1,0 +1,44 @@
+.whole-page-container {
+    padding: 5%;
+    padding-left: 10%;
+    width: 100%;
+    height: max-content;
+    min-height: 100vh;
+}
+
+.icongen-intro-container {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+}
+
+.icongen-pic {
+    width: 80%;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 2px 4px 8px #f3f4cb;
+    margin-bottom: 10%;
+}
+
+.icongen-description-section {
+    width: 100%;
+    margin: auto;
+}
+
+.video {
+    width: 90%;
+    height: auto;
+    border-radius: 3%;
+    box-shadow: 2px 4px 8px #f3f4cb;
+    margin-bottom: 10%;
+}
+
+@media screen and (max-width: 1000px) {
+    .icongen-pic.landing {
+        padding-top: 5%;
+    }
+
+    .icongen-description-section {
+        padding-bottom: 10%;
+    }
+}
